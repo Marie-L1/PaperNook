@@ -1,12 +1,16 @@
+"use client";
 import React from "react";
-import styles from "./page.module.scss";
-import Image from "next/image";
-import { useRouter } from "next/router";
+import "./styles/main.scss";
+import Image from "next/image"; 
+import router from "next/router";
+import Footer from "./components/Footer/Footer";
+
 
 function page() {
-  const router = useRouter();
 
   return (
+    <>
+
     <div className="homepage">
       <div className="homepage__logo">
         <Image src="/images/PaperNook-logo.svg"
@@ -21,13 +25,13 @@ function page() {
           <button className="homepage__buttons__button" onClick={() => router.push("/register")}>Register</button>
         </div>
       </div>
-
       <Image src="/images/readmore-img.svg" 
         alt="background-homepage"
         width={1000}
         height={500}/>
-
     </div>
+    <Footer />
+    </>
   )
 }
 
