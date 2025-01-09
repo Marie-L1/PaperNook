@@ -10,7 +10,6 @@ function page() {
 
   return (
     <>
-
     <div className="homepage">
       <div className="homepage__logo">
         <Image src="/images/PaperNook-logo.svg"
