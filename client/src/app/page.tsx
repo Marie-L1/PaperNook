@@ -22,7 +22,7 @@ function page() {
         </div>
       </div>
 
-      <Image src="/images/background-homepage.jpg" 
+      <Image src="/images/readmore-img.svg" 
         alt="background-homepage"
         width={1000}
         height={500}/>
