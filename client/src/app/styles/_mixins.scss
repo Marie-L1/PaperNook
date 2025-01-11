@@ -1,6 +1,5 @@
 @use "./variables" as *;
 
-
 @mixin tablet {
     @media (min-width: 768px) {
         @content;
@@ -13,7 +12,7 @@
     }
 };
 
-//MOBILE TEXT STYLES
+// mobile text mixins
 @mixin page-header {
     font-size: 1.75rem;
     line-height: 2.25rem;
@@ -43,7 +42,7 @@
     line-height: 1rem;
 }
 
-//DESKTOP AND TABLET TEXT STYLES
+// tablet and desktop text mixins
 @mixin dt-page-header {
     font-size: 2rem;
     line-height: 2.5rem;
