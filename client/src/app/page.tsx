@@ -13,21 +13,22 @@ function page() {
     <div className="homepage">
       <div className="homepage__logo">
         <Image src="/images/PaperNook-logo.svg"
+          className="homepage__logo-img"
           alt="logo"
-          width={500}
-          height={500}
+          width={250}
+          height={250}
         />
-        <p className="homepage__logo-text">PaperNook</p>
-
+        <p className="homepage__logo-text">Login or Register to start exploring books!</p>
         <div className="homepage__buttons">
-          <button className="homepage__buttons__button" onClick={() => router.push("/login")}>Login</button>
-          <button className="homepage__buttons__button" onClick={() => router.push("/register")}>Register</button>
+          <button className="homepage__btn" onClick={() => router.push("/login")}>Login</button>
+          <button className="homepage__btn" onClick={() => router.push("/register")}>Register</button>
         </div>
       </div>
-      <Image src="/images/readmore-img.svg" 
+      <Image src="/images/readmore.svg" 
+        className="homepage__readmore-img"
         alt="background-homepage"
-        width={1000}
-        height={500}/>
+        width={250}
+        height={250}/>
     </div>
     <Footer />
     </>
