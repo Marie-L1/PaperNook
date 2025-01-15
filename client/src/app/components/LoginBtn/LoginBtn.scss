@@ -1,2 +1,39 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.login-btn{
+
+    &__logo-text{
+        @include sub-header;
+        text-align: center;
+        color: $font;
+        margin: 2rem;
+    }
+    &__buttons{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    }
+    &__btn{
+    padding: .625rem;
+    border-radius: .3125rem;
+    border: none;
+    background-color: $secondary-pink;
+    color: $font;
+    cursor: pointer;
+    @include body-medium;
+
+        &:hover{
+            background-color: $primary-pink;
+        }
+    }
+
+    @include tablet{
+
+    }
+    @include desktop{
+    
+    }
+
+}

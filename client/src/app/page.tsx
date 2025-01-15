@@ -4,6 +4,7 @@ import "./styles/main.scss";
 import Image from "next/image"; 
 import router from "next/router";
 import Footer from "./components/Footer/Footer";
+import LoginBtn from "./components/LoginBtn/LoginBtn";
 
 
 function page() {
@@ -18,11 +19,7 @@ function page() {
           width={250}
           height={250}
         />
-        <p className="homepage__logo-text">Login or Register to start exploring books!</p>
-        <div className="homepage__buttons">
-          <button className="homepage__btn" onClick={() => router.push("/login")}>Login</button>
-          <button className="homepage__btn" onClick={() => router.push("/register")}>Register</button>
-        </div>
+        <LoginBtn />
       </div>
       <Image src="/images/readmore.svg" 
         className="homepage__readmore-img"
