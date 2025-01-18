@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 import LoginBtn from "./components/LoginBtn/LoginBtn";
 import Logo from "./components/Logo/Logo";
 
-
 function page() {
 
   return (
