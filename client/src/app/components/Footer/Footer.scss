@@ -10,7 +10,6 @@
     position: relative;
     background-color: $background;
     
-
     &__link{
         text-decoration: none;
         gap: 0.5rem;
@@ -20,7 +19,6 @@
         outline: 2px dashed transparent;
         transition: 0.3s ease-in-out;
         padding: 10px;
-        // @include text-small1;
 
         &:focus{
             outline-color: $primary-pink;
